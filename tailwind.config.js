@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+    },
+    extend: {
+      colors: {
+        'yellow-primary': '#FECA2F',
+        'blue-primary': '#190F40',
+      },
+      fontFamily: {
+        'BebasNeue': ['BebasNeue', 'sans-serif'],
+        'Poppins': ['Poppins', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
