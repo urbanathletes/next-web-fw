@@ -4,8 +4,8 @@ import { MdArrowForward } from "react-icons/md";
 function ButtonLink(props) {
 
   function scrollTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
   }
 
   return (

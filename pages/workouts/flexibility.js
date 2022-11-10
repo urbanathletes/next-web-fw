@@ -1,50 +1,39 @@
 import ButtonLink from '../../components/ButtonLink'
 import Layout from '../../components/Layout'
 
-function WeightLost() {
+function Flexibility() {
   return (
     <Layout title="Workouts">
       <div className="w-full h-7 bg-blue-primary"></div>
       
       <div className="container text-blue-primary">
-        <h1 className="my-8 font-judul text-5xl text-center">Weight Lost</h1>
+        <h1 className="my-8 font-judul text-5xl text-center">FLEXIBILITY & MUSCLE KNOT RELEASE</h1>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center">
           <div className="mx-auto">
             <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/Circuit.jpg" alt="Weight Loss" />
+              <img src="/image/workouts/Flexibility/Fitball.jpg" alt="Fitball" />
               <div className="absolute left-0 bottom-0 m-4">
-                <h3 className="font-judul text-2xl text-yellow-primary">CIRCUIT</h3>
+                <h3 className="font-judul text-2xl text-yellow-primary">FITBALL</h3>
               </div>
             </div>
             <div>
-              <ButtonLink text="VIEW MORE" link="/workouts/circuit" />
+              <ButtonLink text="VIEW MORE" link="/workouts/fitball" />
             </div>
           </div>
           <div className="mx-auto">
             <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/BodyPump.jpg" alt="Weight Loss" />
+              <img src="/image/workouts/Flexibility/Yoga_Wheel.jpg" alt="Yoga_Wheel" />
               <div className="absolute left-0 bottom-0 m-4">
-                <h3 className="font-judul text-2xl text-yellow-primary">LESMILLS <br/>BODYPUMP</h3>
+                <h3 className="font-judul text-2xl text-yellow-primary">YOGA WHEEL</h3>
               </div>
             </div>
             <div>
-              <ButtonLink text="VIEW MORE" link="/workouts/bodypump" />
+              <ButtonLink text="VIEW MORE" link="/workouts/yoga-wheel" />
             </div>
           </div>
           <div className="mx-auto">
             <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/Bodycombat.jpg" alt="Weight Loss" />
-              <div className="absolute left-0 bottom-0 m-4">
-                <h3 className="font-judul text-2xl text-yellow-primary">LESMILLS <br/>BODYCOMBAT</h3>
-              </div>
-            </div>
-            <div>
-              <ButtonLink text="VIEW MORE" link="/workouts/bodycombat" />
-            </div>
-          </div>
-          <div className="mx-auto">
-            <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/Vinyasa_Yoga.jpg" alt="Weight Loss" />
+              <img src="/image/workouts/Flexibility/Yoga.jpg" alt="Vinyasa Yoga" />
               <div className="absolute left-0 bottom-0 m-4">
                 <h3 className="font-judul text-2xl text-yellow-primary">Vinyasa Yoga</h3>
               </div>
@@ -55,13 +44,13 @@ function WeightLost() {
           </div>
           <div className="mx-auto">
             <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/Yoga_Wheel.jpg" alt="Weight Loss" />
+              <img src="/image/workouts/Flexibility/TRX.jpg" alt="TRX" />
               <div className="absolute left-0 bottom-0 m-4">
-                <h3 className="font-judul text-2xl text-yellow-primary">YOGA WHEEL</h3>
+                <h3 className="font-judul text-2xl text-yellow-primary">TRX</h3>
               </div>
             </div>
             <div>
-              <ButtonLink text="VIEW MORE" link="/workouts/yoga-wheel" />
+              <ButtonLink text="VIEW MORE" link="/workouts/trx" />
             </div>
           </div>
         </div>
@@ -104,4 +93,4 @@ function WeightLost() {
   )
 }
 
-export default WeightLost
+export default Flexibility

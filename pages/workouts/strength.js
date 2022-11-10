@@ -1,13 +1,13 @@
 import ButtonLink from '../../components/ButtonLink'
 import Layout from '../../components/Layout'
 
-function WeightLost() {
+function Strength() {
   return (
     <Layout title="Workouts">
       <div className="w-full h-7 bg-blue-primary"></div>
       
       <div className="container text-blue-primary">
-        <h1 className="my-8 font-judul text-5xl text-center">Weight Lost</h1>
+        <h1 className="my-8 font-judul text-5xl text-center">STRENGTH</h1>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center">
           <div className="mx-auto">
             <div className="relative max-w-xs">
@@ -44,13 +44,13 @@ function WeightLost() {
           </div>
           <div className="mx-auto">
             <div className="relative max-w-xs">
-              <img src="/image/workouts/WeightLoss/Vinyasa_Yoga.jpg" alt="Weight Loss" />
+              <img src="/image/workouts/Flexibility/TRX.jpg" alt="TRX" />
               <div className="absolute left-0 bottom-0 m-4">
-                <h3 className="font-judul text-2xl text-yellow-primary">Vinyasa Yoga</h3>
+                <h3 className="font-judul text-2xl text-yellow-primary">TRX</h3>
               </div>
             </div>
             <div>
-              <ButtonLink text="VIEW MORE" link="/workouts/vinyasa-yoga" />
+              <ButtonLink text="VIEW MORE" link="/workouts/trx" />
             </div>
           </div>
           <div className="mx-auto">
@@ -104,4 +104,4 @@ function WeightLost() {
   )
 }
 
-export default WeightLost
+export default Strength

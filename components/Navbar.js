@@ -100,8 +100,8 @@ function Navbar() {
                 <Link onClick={hamburger} href="/article" className={path[1] == 'article' ? 'active' : ''}>
                   <li className="py-1.5 lg:px-3">Article</li>
                 </Link>
-                <Link onClick={hamburger} href="/shop" className="lg:px-3">
-                  <li className="py-1.5">Shop</li>
+                <Link onClick={hamburger} href="/shop" className={path[1] == 'shop' ? 'active' : ''}>
+                  <li className="py-1.5 lg:px-3">Shop</li>
                 </Link>
               </ul>
             </div>
