@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 8080",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
