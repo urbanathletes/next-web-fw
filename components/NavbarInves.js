@@ -49,17 +49,17 @@ function Navbar() {
                     lg:absolute lg:group-hover:h-36 lg:min-w-max lg:-left-10 lg:text-left
                   ">
                     <ul className="mt-2 lg:text-white lg:bg-blue-primary lg:p-4 lg:rounded-xl">
-                      <Link onClick={hamburger} href="/invesment" className={route.pathname == '/invesment' ? 'active' : ''}>
+                      <Link onClick={hamburger} href="/investment" className={route.pathname == '/investment' ? 'active' : ''}>
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           OVERVIEW
                         </li>
                       </Link>
-                      <Link onClick={hamburger} href="/invesment/our-founder"className={route.pathname == '/invesment/our-founder' ? 'active' : ''} >
+                      <Link onClick={hamburger} href="/investment/our-founder"className={route.pathname == '/investment/our-founder' ? 'active' : ''} >
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           OUR FOUNDER & HISTORY
                         </li>
                       </Link>
-                      <Link onClick={hamburger} href="/invesment/market-strategy"className={route.pathname == '/invesment/market-strategy' ? 'active' : ''} >
+                      <Link onClick={hamburger} href="/investment/market-strategy"className={route.pathname == '/investment/market-strategy' ? 'active' : ''} >
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           Market Strategy
                         </li>
@@ -67,7 +67,7 @@ function Navbar() {
                     </ul>
                   </div>
                 </li>
-                <Link onClick={hamburger} href="/invesment/presentation" className={route.pathname == '/invesment/presentation' ? 'active' : ''}>
+                <Link onClick={hamburger} href="/investment/presentation" className={route.pathname == '/investment/presentation' ? 'active' : ''}>
                   <li className="py-1.5 lg:px-3">Presentation</li>
                 </Link>
               </ul>

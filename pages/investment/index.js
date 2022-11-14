@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { useState } from "react";
-import Layout from "../../components/Layout"
+import Layout from "../../components/Layout";
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
 
 function Investment() {
+  const MySwal = withReactContent(Swal);
+  
   const [inputs, setInputs] = useState({'kode_inves': 2});
   const handleinputs = (event) => {
     const name = event.target.name;
@@ -10,10 +14,29 @@ function Investment() {
     setInputs(values => ({...values, [name]: value}))
   }
   // console.log(inputs);
-  function FormSubmit(e) {
+  async function FormSubmit (e) {
     e.preventDefault();
     // dispatch(LoginUser(inputs));
-    console.log('submit', inputs);
+    const url = "https://apiweb.urbanathletes.co.id/investment";
+    const JSONdata = JSON.stringify(inputs);
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSONdata
+    });
+    if (response.status !== 201) {
+      return MySwal.fire({
+        icon: 'error',
+        title: "email or phone number already exists",
+      });
+    }
+    const result = await response.json()
+    MySwal.fire({
+      icon: 'success',
+      title: result.msg,
+    });
   }
   
   function menuStudio() {
