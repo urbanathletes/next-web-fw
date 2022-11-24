@@ -26,17 +26,20 @@ function Investment() {
       },
       body: JSONdata
     });
+
+    const result = await response.json();
     if (response.status !== 201) {
       return MySwal.fire({
         icon: 'error',
-        title: "email or phone number already exists",
+        title: result.msg
       });
     }
-    const result = await response.json()
+
     MySwal.fire({
       icon: 'success',
-      title: result.msg,
+      title: result.msg
     });
+    setInputs({'kode_inves': 2})
   }
   
   function menuStudio() {
@@ -71,7 +74,7 @@ function Investment() {
   }
 
   return (
-    <Layout title="invesment">
+    <Layout title="investment">
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <video className="object-cover object-right min-w-min lg:min-w-full" loop autoPlay muted>
           <source src="/video/VideoBannerUA.mp4" type="video/mp4" />

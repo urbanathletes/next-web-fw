@@ -17,9 +17,10 @@ export default function Home() {
           <p>
             Fitnessworks is a new experience in fitness. We are the first Gym & Fitness Centre with technology & time-based membership system, in Indonesia. With technology we can provide high level facility & activity with low-cost membership plan, so everyone can join & begin their fitness journey. it is our mission to create fitness for everyone.
           </p>
-          <button className="border border-yellow-primary px-4 py-1 my-4">
+          {/* <button className="border border-yellow-primary px-4 py-1 my-4">
             VIEW MORE
-          </button>
+          </button> */}
+          <ButtonLink text="VIEW MORE" link="/about" />
         </div>
       </div>
       <div className="2xl:container bg-blue-primary px-0 md:max-h-96 relative overflow-hidden object-fill md:flex">

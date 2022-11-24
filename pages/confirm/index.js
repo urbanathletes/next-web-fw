@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 function CTnc() {
@@ -13,6 +14,10 @@ function CTnc() {
 
   return (
     <div>
+      <Head>
+        <title>Fitnessworks</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="font-judul text-5xl text-blue-primary text-center my-6">
         <h1>Term & Condition Membership</h1>
       </div>
