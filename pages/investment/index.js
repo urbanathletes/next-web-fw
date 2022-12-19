@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "../../components/Layout";
 import Swal from 'sweetalert2';
 import withReactContent from "sweetalert2-react-content";
+import Pixel1 from "../../components/facebook/Pixel1";
 
 function Investment() {
   const MySwal = withReactContent(Swal);
@@ -364,6 +365,7 @@ function Investment() {
           <img src="/image/logo/CIRCUIT.png" alt="BUSINESS SUPPORT" className="h-20 m-4"/>
         </div>
       </div>
+      <Pixel1 />
     </Layout>
   )
 }

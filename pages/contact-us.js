@@ -1,11 +1,12 @@
 import React from 'react'
 import InputText from '../components/InputText'
 import { BsInstagram } from "react-icons/bs";
+import Layout from '../components/Layout';
 
 function ContactUs() {
 
   return (
-    <div>
+    <Layout title="Contavt Us">
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative h-96">
         <img src="/image/home/Hero_slide_2.jpg" alt="Fitnesswork Contact Us" className="object-cover object-center h-full sm:min-w-full"/>
         <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center text-center h-24 bg-white bg-opacity-80">
@@ -80,7 +81,7 @@ function ContactUs() {
         </div>
       </div>
 
-    </div>
+    </Layout>
   )
 }
 

@@ -126,7 +126,7 @@ function About() {
 
       <div className="lg:flex lg:justify-center lg:items-center my-4 lg:container mx-auto">
         <div>
-          <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" className="max-w-lg mx-auto" />
+          <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" className="md:max-w-md lg:max-w-lg mx-auto" />
         </div>
         <div className="container mx-auto lg:mx-0 text-blue-primary py-8 lg:max-w-2xl">
           <h2 className="font-BebasNeue font-black text-4xl mb-4">SUPPORTING YOU EVERY STEP OF THE WAY</h2>
@@ -135,11 +135,11 @@ function About() {
           <p>- Contactless entry to the gym through the app</p>
           <p>- Book Into your favourite classes</p>
           <p>- Manage your membership from changing your gym to updating payment details</p>
-          <button className="mt-4 py-1">
-          <img src="/image/aboutUs/button-google-play.png" alt="Mobile App Fitness Works" className="h-12 mx-2" />
+          <button className="mt-4 py-1 mx-auto sm:mx-0 block sm:inline">
+            <img src="/image/aboutUs/button-google-play.png" alt="Mobile App Fitness Works" className="h-12 mx-2" />
           </button>
-          <button className="mt-4 py-1">
-          <img src="/image/aboutUs/button-app-store.png" alt="Mobile App Fitness Works" className="h-12 mx-2" />
+          <button className="mt-4 py-1 mx-auto sm:mx-0 block sm:inline">
+            <img src="/image/aboutUs/button-app-store.png" alt="Mobile App Fitness Works" className="h-12 mx-2" />
           </button>
         </div>
       </div>

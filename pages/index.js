@@ -3,6 +3,7 @@ import ButtonLink from '../components/ButtonLink'
 import Layout from '../components/Layout'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
+import Pixel1 from '../components/facebook/Pixel1'
 import { BsCheck2Square } from "react-icons/bs";
 
 
@@ -351,6 +352,7 @@ export default function Home() {
           <img src="/image/logo/CIRCUIT.png" alt="BUSINESS SUPPORT" className="h-20 m-4"/>
         </div>
       </div>
+      <Pixel1 />
     </Layout>
   )
 }
