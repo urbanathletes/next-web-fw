@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex justify-center lg:max-h-screen overflow-hidden relative">
         <img src="/image/Header_home.jpg" alt="Fitnesswork Hero Page" className="object-cover object-center min-w-min lg:min-w-full max-h-[80vh]"/>
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/30"></div>
-        <div className="container absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-md mx-auto text-white text-center">
+        <div className="container absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center max-w-2xl mx-auto text-white text-center">
           <img src="./image/LogoFitnessworkPutih.png" alt="Fitnessworks" className="w-full" />
           <p>
             Fitnessworks is a new experience in fitness. We are the first Gym & Fitness Centre with technology & time-based membership system, in Indonesia. With technology we can provide high level facility & activity with low-cost membership plan, so everyone can join & begin their fitness journey. it is our mission to create fitness for everyone.
