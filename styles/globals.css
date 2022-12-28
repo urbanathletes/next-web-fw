@@ -12,6 +12,11 @@
   src: url('/fonts/Poppins-Medium.otf');
 }
 
+@font-face{
+  font-family: PoppinsLight;
+  src: url('/fonts/Poppins-Light.ttf');
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

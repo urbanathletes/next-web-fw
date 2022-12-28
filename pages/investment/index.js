@@ -18,6 +18,7 @@ function Investment() {
   async function FormSubmit (e) {
     e.preventDefault();
     // dispatch(LoginUser(inputs));
+    inputs.name = inputs.first_name + ' ' + inputs.last_name
     const url = "https://apiweb.urbanathletes.co.id/investment";
     const JSONdata = JSON.stringify(inputs);
     const response = await fetch(url, {

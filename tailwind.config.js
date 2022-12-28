@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'BebasNeue': ['BebasNeue', 'sans-serif'],
         'Poppins': ['Poppins', 'sans-serif'],
+        'PoppinsLight': ['PoppinsLight', 'sans-serif'],
       },
     },
   },
