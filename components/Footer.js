@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
+import { IMG_FOOTER } from "../constant/SectionFooter";
 
 function Footer() {
   function atas() {
@@ -15,12 +16,9 @@ function Footer() {
           <p><i className="icofont-instagram"></i> Follow US ON @FITNESSWORKS.ID</p>
         </div>
         <div className="py-4 flex justify-start xl:justify-center overflow-x-auto no-scrollbar">
-          <img src="/image/Footer/Footer_1.jpg" alt="UA Footer" className="w-60" />
-          <img src="/image/Footer/Footer_2.jpg" alt="UA Footer" className="w-60" />
-          <img src="/image/Footer/Footer_3.jpg" alt="UA Footer" className="w-60" />
-          <img src="/image/Footer/Footer_4.jpg" alt="UA Footer" className="w-60" />
-          <img src="/image/Footer/Footer_5.jpg" alt="UA Footer" className="w-60" />
-          <img src="/image/Footer/Footer_6.jpg" alt="UA Footer" className="w-60" />
+          {IMG_FOOTER.map((row, idx) => (
+            <img key={idx} src={row.uri} alt={row.label} className="w-60" />
+          ))}
         </div>
         <div className="container mx-auto font-light">
           <div className="border-b-4 border-white"></div>
@@ -31,8 +29,16 @@ function Footer() {
                 Fitnessworks is a new experience in fitness. We are the first Gym & Fitness Centre with technology & time-based membership system, in Indonesia. With technology we can provide high level facility & activity with low-cost membership plan, so everyone can join & begin their fitness journey. it is our mission to create fitness for everyone.
               </p>
               <ul className="space-y-4">
-                <li><MdLocationPin className="mr-4 text-xl inline"/> View Location</li>
-                <li><MdOutlineEmail className="mr-4 text-xl inline"/> Info@fitnessworks.co.id</li>
+                <li>
+                  <a href="https://goo.gl/maps/jGxfqXGysw6A9dGg7" target="_blank" rel="noreferrer">
+                    <MdLocationPin className="mr-4 text-xl inline"/> View Location
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@fitnessworks.co.id?subject=Mau Tanya Tentang Fitnessworks" target="_blank" rel="noreferrer">
+                    <MdOutlineEmail className="mr-4 text-xl inline"/> Info@fitnessworks.co.id
+                  </a>
+                </li>
                 <li>
                   <a href="https://wa.me/628179288880" target="_blank" rel="noreferrer">
                     <IoLogoWhatsapp className="mr-4 text-xl inline"/> 0817 - 9188 - 880

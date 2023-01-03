@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 // import styles from '../styles/Home.module.css'
 import Pixel1 from '../components/facebook/Pixel1'
 import { BsCheck2Square } from "react-icons/bs";
+import { HomeShopEquipment, HomeMobileAppSupporting } from '../components/Pages/Home';
 
 
 export default function Home() {
@@ -18,9 +19,6 @@ export default function Home() {
           <p>
             Fitnessworks is a new experience in fitness. We are the first Gym & Fitness Centre with technology & time-based membership system, in Indonesia. With technology we can provide high level facility & activity with low-cost membership plan, so everyone can join & begin their fitness journey. it is our mission to create fitness for everyone.
           </p>
-          {/* <button className="border border-yellow-primary px-4 py-1 my-4">
-            VIEW MORE
-          </button> */}
           <ButtonLink text="VIEW MORE" link="/about" />
         </div>
       </div>
@@ -29,9 +27,6 @@ export default function Home() {
           <div className="absolute mx-8 xl:ml-12 z-20 grid items-center h-full">
             <div className="container">
               <p>START NOW FOR FREE ! be a better version of you, NO EXCUSES !</p>
-              {/* <p>Get your 3 days trial, get rid all your excuses, </p>
-              <p>change now or never! Make better version of you with Fitnessworks.</p>
-              <p>#fitnessforeveryone</p> */}
               <div className="text-yellow-primary my-4">
                 <ButtonLink text="GET TRIAL" link="/form-free-trial" />
               </div>
@@ -187,65 +182,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:flex md:justify-center md:items-center my-4">
-        <div>
-          <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" className="md:max-w-md lg:max-w-lg mx-auto" />
-        </div>
-        <div className="text-center text-blue-primary py-8 md:max-w-3xl">
-          <h2 className="font-BebasNeue font-black text-4xl mb-4">SUPPORTING YOU EVERY STEP OF THE WAY</h2>
-          <p>The Fitnesswork app lets you manage your membership from the palm of your hand. With contactless entry, access to over 600 workouts and personalised training plans. And so much more!</p>
-          <div className="flex justify-center">
-            <ButtonLink text="FIND OUT MORE" link="/fitnessworks-apps" />
-          </div>
-        </div>
-      </div>
+      <HomeMobileAppSupporting />
 
-      <div className="bg-blue-primary py-8">
-        <div className="relative py-10 text-center text-white font-BebasNeue font-black">
-          <h1 className="text-[10rem] opacity-20 py-8">SHOP</h1>
-          <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
-            <h1 className="text-4xl sm:text-6xl">training equipment & Merchandise</h1>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 container mx-auto">
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Slaves_yellow.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Gym_bag_2.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
-              </div>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Tshirt.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Mini_towel.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-              <div className="absolute top-0 left-0 pt-4 pl-4">
-                <p className="bg-neutral-500 text-white px-3 py-1">NEW</p>
-              </div>
-            </div>
-          </div>
-          <div className="m-4">
-            <div className="relative w-max mx-auto">
-              <img src="/image/home/Yoga_mat.jpg" alt="Shop" className="max-w-xs mx-auto"/>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomeShopEquipment />
 
       <div className="py-8">
         <div className="relative py-10 text-center text-blue-primary font-BebasNeue font-black">

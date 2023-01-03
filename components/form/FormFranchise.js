@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { DANAINVEST } from '../../constant/formFranchise';
 import { InputModel1 } from './input/InputModel1';
 
 export const FormFranchise = () => {
@@ -16,14 +17,6 @@ export const FormFranchise = () => {
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
-
-  const danaInvest = [
-    {id:1, value:1700000000},
-    {id:2, value:2000000000},
-    {id:3, value:2500000000},
-    {id:4, value:4000000000},
-    {id:5, value:5000000000},
-  ];
 
   const rupiah = (number)=>{
     return new Intl.NumberFormat().format(number);
@@ -89,7 +82,7 @@ export const FormFranchise = () => {
               <select className="w-full bg-transparent border-2 focus:border-black dark:focus:border-white h-10 px-2 group-focus:bg-black" name="nominal" value={inputs.nominal || ''} onChange={handleChange} required={true}>
                 <option value="" key="">Select</option>
                 {
-                  danaInvest.map((dana) => {
+                  DANAINVEST.map((dana) => {
                     return (
                       <option value={dana.value} key={dana.id}>
                         {

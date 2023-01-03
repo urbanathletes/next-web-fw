@@ -1,6 +1,7 @@
 import React from 'react'
 import InputText from '../components/InputText'
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
+import { ImFacebook } from "react-icons/im";
 import Layout from '../components/Layout';
 
 function ContactUs() {
@@ -14,7 +15,7 @@ function ContactUs() {
         </div>
       </div>
       <div>
-        <iframe title='map' src="https://www.google.com/maps/d/u/1/embed?mid=1BLfrcfUk0H2FggTjFXoI0RILoBbTR-o&ehbc=2E312F" width="100%" height="480"/>
+        <iframe title='map' src="https://www.google.com/maps/d/u/1/embed?mid=1lbBJWos9tN7de1EqcHH9o693LYQggOU&ehbc=2E312F" width="100%" height="480"/>
       </div>
       
       <div className="container text-blue-primary grid lg:grid-cols-2">
@@ -32,13 +33,13 @@ function ContactUs() {
             </div>
             <div className="my-4">
               <div className="inline-flex">
-                <i className="p-2 bg-blue-primary text-white"><BsInstagram /></i>
+                <i className="p-2 bg-blue-primary text-white"><ImFacebook /></i>
                 <p className="py-1 px-4 border-2 border-blue-primary">Fitnessworks.id</p>
               </div>
             </div>
             <div className="my-4">
               <div className="inline-flex">
-                <i className="p-2 bg-blue-primary text-white"><BsInstagram /></i>
+                <i className="p-2 bg-blue-primary text-white"><BsYoutube /></i>
                 <p className="py-1 px-4 border-2 border-blue-primary">Fitnessworks.id</p>
               </div>
             </div>
