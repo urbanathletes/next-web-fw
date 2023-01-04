@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormFranchise } from '../components/form/FormFranchise';
+import { FormFranchise } from '../../components/form/FormFranchise';
 
 function Franchise() {
   const bgFranchise = {
