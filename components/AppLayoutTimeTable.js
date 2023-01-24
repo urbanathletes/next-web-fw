@@ -22,9 +22,9 @@ function AppLayoutTimeTable(props) {
             <Link href="/time-table" className={"px-8 font-bold pb-2 " + (path[1] == 'time-table' ? 'active-border active' : '')}>
               <button>STUDIO WORKOUTS</button>
             </Link>
-            <Link href="/online-class" className={"px-8 font-bold pb-2 " + (path[1] == 'online-class' ? 'active-border active' : '')}>
+            {/* <Link href="/online-class" className={"px-8 font-bold pb-2 " + (path[1] == 'online-class' ? 'active-border active' : '')}>
               <button>ONLINE WORKOUTS</button>
-            </Link>
+            </Link> */}
           </div>
           <div className="border-b-2 border-yellow-primary my-4 mx-2"></div>
           <div>

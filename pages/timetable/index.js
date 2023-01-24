@@ -4,7 +4,7 @@ import Layout from "../../components/Layout"
 
 function TimeTable() {
   return (
-    <Layout title="Time Table">
+    <Layout title="TimeTable">
       <AppLayoutTimeTable>
         <div className="container">
           <div className="md:grid md:grid-cols-2 mt-4 md:gap-4 text-neutral-100">

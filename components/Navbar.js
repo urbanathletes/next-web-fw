@@ -55,16 +55,16 @@ function Navbar() {
                           OUR PROGRAM
                         </li>
                       </Link>
-                      <Link onClick={hamburger} href="/time-table" className={path[1] == 'time-table' ? 'active' : ''}>
+                      <Link onClick={hamburger} href="/timetable" className={path[1] == 'time-table' ? 'active' : ''}>
                         <li className="hover:text-yellow-primary transition-all duration-300">
-                          TIME TABLE
+                          TIMETABLE
                         </li>
                       </Link>
-                      <Link onClick={hamburger} href="/online-class" className={path[1] == 'online-class' ? 'active' : ''}>
+                      {/* <Link onClick={hamburger} href="/online-class" className={path[1] == 'online-class' ? 'active' : ''}>
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           ONLINE CLASS
                         </li>
-                      </Link>
+                      </Link> */}
                       <Link onClick={hamburger} href="/virtual-class" className={path[1] == 'virtual-class' ? 'active' : ''}>
                         <li className="hover:text-yellow-primary transition-all duration-300">
                           Virtual Class
