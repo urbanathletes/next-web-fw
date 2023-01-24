@@ -18,7 +18,9 @@ function Layout(props) {
         (<NavbarInves/>) :
         (<Navbar/>)
       }
-      <main>{ props.children }</main>
+      <main className="container">
+        { props.children }
+      </main>
       <Footer/>
     </>
   )

@@ -15,10 +15,10 @@ export const HomeShopEquipment = () => {
           <h1 className="text-4xl sm:text-6xl">training equipment & Merchandise</h1>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 container mx-auto">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 w-full mx-auto">
         {SHOP_EQUIPMENT.map((item, idx) => (
           <div className="m-4" key={idx}>
-            <div className="relative w-max mx-auto">
+            <div className="relative mx-auto">
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-blue-primary/70 transition-all duration-300 flex flex-col justify-center items-center text-white opacity-0 hover:opacity-100">
                 <div className="h-full flex flex-col justify-center items-center">
                   <h3 className=" my-4 text-3xl font-BebasNeue font-black tracking-widest">{item.name}</h3>
@@ -28,7 +28,7 @@ export const HomeShopEquipment = () => {
                   <ButtonLink text="ADD TO CARD" link="/shop" />
                 </div>
               </div>
-              <img src={item.img} alt="Shop" className="max-w-xs mx-auto"/>
+              <img src={item.img} alt="Shop" className="mx-auto"/>
               {item.brand ? 
                 <div className="absolute top-0 left-0 pt-4 pl-4">
                   <p className="bg-neutral-500 text-white px-3 py-1">{item.brand}</p>

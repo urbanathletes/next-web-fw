@@ -5,7 +5,7 @@ export const HomeMobileAppSupporting = () => {
   return (
     <div className="md:flex md:justify-center md:items-center my-4 lg:px-8">
       <div>
-        <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" />
+        <img src="/image/home/FitnessWork_apps.png" alt="Mobile App Fitness Works" className="max-w-lg w-full" />
       </div>
       <div className="text-center text-blue-primary py-8 md:max-w-2xl">
         <h2 className="font-BebasNeue font-black text-4xl mb-4">SUPPORTING YOU EVERY STEP OF THE WAY</h2>

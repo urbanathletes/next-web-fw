@@ -16,7 +16,7 @@ function Navbar() {
   const path = route.asPath.split('/');
   
   return (
-    <div className="tracking-wider overflow-visible">
+    <div className="tracking-wider overflow-visible container">
       <div className="font-BebasNeue text-blue-primary overflow-visible
         lg:container lg:px-2 lg:w-full lg:flex lg:justify-between lg:items-center lg:my-1
         relative
