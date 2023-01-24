@@ -7,6 +7,7 @@ import Pixel1 from '../components/facebook/Pixel1'
 import { BsCheck2Square } from "react-icons/bs";
 import { HomeShopEquipment, HomeMobileAppSupporting, SectionOurProgram } from '../components/Pages/Home';
 import { SectionPromotionItems } from '../components/Pages/SectionPromotionItems';
+import { SectionSupportingYouEvery } from '../components/Pages/SectionSupportingYouEvery';
 
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
 
       <SectionPromotionItems />
 
-      <HomeMobileAppSupporting />
+      <SectionSupportingYouEvery />
 
       <HomeShopEquipment />
 

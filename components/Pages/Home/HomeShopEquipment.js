@@ -31,11 +31,7 @@ export const HomeShopEquipment = () => {
                   <ButtonLink text="ADD TO CARD" link="/shop" />
                 </div>
               </div>
-<<<<<<< HEAD
               <img src={item.img} alt="Shop" className="mx-auto"/>
-=======
-              <img src={item.img} alt="Shop" className="max-w-xs mx-auto" />
->>>>>>> 4332f847edfa3d1f2b94ccf27b55d6a5865e0050
               {item.brand ? 
                 <div className="absolute top-0 left-0 pt-4 pl-4">
                   <p className="bg-neutral-500 text-white px-3 py-1">{item.brand}</p>
