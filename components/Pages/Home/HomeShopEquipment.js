@@ -3,9 +3,12 @@ import { SHOP_EQUIPMENT } from '../../../constant/pageHome'
 import ButtonLink from '../../ButtonLink'
 
 const rpPrice = (el) => {
-  return new Intl.NumberFormat().format(el)
+  const n = new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR"
+  }).format(el)
+  return n
 }
-
 export const HomeShopEquipment = () => {
   return (
     <div className="bg-blue-primary py-8">
@@ -22,13 +25,17 @@ export const HomeShopEquipment = () => {
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-blue-primary/70 transition-all duration-300 flex flex-col justify-center items-center text-white opacity-0 hover:opacity-100">
                 <div className="h-full flex flex-col justify-center items-center">
                   <h3 className=" my-4 text-3xl font-BebasNeue font-black tracking-widest">{item.name}</h3>
-                  <p>Rp {rpPrice(item.price)}</p>
+                  <p>{item.price ? rpPrice(item.price) : ""}</p>
                 </div>
                 <div className="">
                   <ButtonLink text="ADD TO CARD" link="/shop" />
                 </div>
               </div>
+<<<<<<< HEAD
               <img src={item.img} alt="Shop" className="mx-auto"/>
+=======
+              <img src={item.img} alt="Shop" className="max-w-xs mx-auto" />
+>>>>>>> 4332f847edfa3d1f2b94ccf27b55d6a5865e0050
               {item.brand ? 
                 <div className="absolute top-0 left-0 pt-4 pl-4">
                   <p className="bg-neutral-500 text-white px-3 py-1">{item.brand}</p>
